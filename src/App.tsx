@@ -1,4 +1,6 @@
 import logo from "./assets/Logo nlw.svg";
+import { NewnoteCard } from "./componentes/new-note-card";
+import { Notecard } from "./componentes/note-card";
 
 export function App() {
   return (
@@ -13,7 +15,15 @@ export function App() {
       </form>
 
       <div className="h-px bg-slate-700" />
-      <div className="grid grid-cols-3"></div>
+
+      <div className="grid grid-cols-3 gap-6 auto-rows-[250px]">
+        <NewnoteCard />
+
+        <Notecard />
+        <Notecard />
+        <Notecard />
+        <Notecard />
+      </div>
     </div>
   );
 }
